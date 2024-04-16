@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+nav h4, nav span, h5{
+    cursor: pointer;
+}
+
+.icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.line{
+    border-top: 3px solid #44403c;
+}
+
+.line i{
+    transform: rotate(-45deg);
+    font-size: 1.3rem;
+    opacity: 0;
+}
+
+.line:hover i{
+    opacity: 1;
+}
+
+.bg-img{
+    height: 70vh;
+    background-image: url(../img/fashion.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@media (max-width:1024px) {
+    .line i{
+        opacity: 1;
+    }
+    .bg-img{
+        height: 45vh;
+    }
+}
